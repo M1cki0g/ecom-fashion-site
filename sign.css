@@ -1,0 +1,100 @@
+/* General Reset */
+body, h1, h2, p, form, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f4f6;
+}
+
+/* Container for the sign-in page */
+.shop-sign-in-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+/* Header Styling */
+header h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Profile Container Styling */
+.profil-containe {
+    padding: 10px;
+}
+
+/* Main Section Styling */
+main h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+/* Form Group Styling */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #000000c5;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .shop-sign-in-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    main h2 {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,26 @@
+CREATE DATABASE ecommerce;
+
+USE ecommerce;
+
+-- CREATE TABLE users (
+-- id INT AUTO_INCREMENT PRIMARY KEY,
+-- email VARCHAR(255) NOT NULL,
+-- password VARCHAR(255) NOT NULL
+-- );
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(150) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE products (
+id INT AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(255) NOT NULL,
+description TEXT,
+price DECIMAL(10, 2),
+image_url VARCHAR(255)
+);
+
